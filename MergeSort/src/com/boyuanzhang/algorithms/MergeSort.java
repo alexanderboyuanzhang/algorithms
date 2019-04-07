@@ -18,12 +18,12 @@ class MergeSort {
 
 		/* Copy data to temp arrays */
 		for (int i = 0; i < n1; ++i) {
-			System.out.print("\ti: " + i + " arr: " + arr[l+i]);
+			System.out.print("\ti: " + i + " arr: " + arr[l + i]);
 			L[i] = arr[l + i];
 		}
 		System.out.println();
 		for (int j = 0; j < n2; ++j) {
-			System.out.println("\tj: " + j + " arr: " + arr[m+1+j]);			
+			System.out.println("\tj: " + j + " arr: " + arr[m + 1 + j]);
 			R[j] = arr[m + 1 + j];
 		}
 
@@ -58,15 +58,11 @@ class MergeSort {
 			j++;
 			k++;
 		}
-//		System.out.print("merge, end: \t");
-//		printArray(arr);
 	}
 
 	// Main function that sorts arr[l..r] using
 	// merge()
 	void sort(int arr[], int l, int r) {
-//		System.out.print("sort, start: \t");
-//		printArray(arr);
 		if (l < r) {
 			// Find the middle point
 			int m = (l + r) / 2;
@@ -77,10 +73,8 @@ class MergeSort {
 
 			// Merge the sorted halves
 			merge(arr, l, m, r);
-//			System.out.print("sort, end: \t");
-//			printArray(arr);
-		}else {
-			System.out.println(" l is not < than r" );
+		} else {
+			System.out.println(" l is not < than r");
 		}
 	}
 
