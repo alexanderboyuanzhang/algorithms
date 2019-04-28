@@ -3,5 +3,4 @@
 Boyuan Zhang
 
 ### References 
-
-### https://www.geeksforgeeks.org/merge-sort/
+https://www.geeksforgeeks.org/merge-sort/
